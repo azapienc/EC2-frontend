@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # EC2-frontend
 # EC2-backend
->>>>>>> b9efbd31e85d553b9c10ca943c2853324674425e
+-- try to run
