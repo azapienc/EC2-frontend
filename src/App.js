@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
 
 function App() {
   const message = useState([]);
 
   useEffect(() => {
-    fetch('localhost:8080')
+    fetch('/api')
       .then((response) => {
+        console.log(response);
         return response.json()
       })
   }, []);
@@ -19,7 +21,7 @@ function App() {
           Greetings from the ether.
         </p>
         <p>
-          {this.message}
+          {message}
         </p>
         <a
           className="App-link"
